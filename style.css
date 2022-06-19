@@ -216,3 +216,54 @@ p {
   color: #343434;
   margin-bottom: 15px;
 }
+
+.features {
+  display: grid;
+  grid-template: repeat(2, 300px) / repeat(2, 408px);
+  justify-content: center;
+  text-align: left;
+  gap: 30px;
+  margin: 30px 0;
+  background-color: #025157;
+  padding: 45px 0;
+}
+
+.feature__card {
+  display: flex;
+  background-color: #FFFBF7;
+  border-radius: 5px;
+}
+
+.card__content {
+  padding: 30px 20px 40px 40px;
+  width: 70%;
+}
+
+.card__image {
+  padding: 30px 40px 0 40px;
+  width: 20%;
+}
+
+.card__title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  line-height: 29px;
+  color: #343434;
+  margin-top: 15px;
+}
+
+.card__text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7e7e7e;
+  margin: 16px 0
+}
+
+.card__link {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #67b54b;
+  margin: 16px 0
+}

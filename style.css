@@ -68,7 +68,8 @@ p {
   width: 80%;
 }
 
-.menu {
+.menu,
+.actions {
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -83,19 +84,19 @@ p {
   color: #025157;
 }
 
-.menu__profile {
+.actions {
   width: 12%;
   text-align: right;
 }
 
-.menu__sign-in {
+.actions__sign-in {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   line-height: 21px;
   color: #67b54b;
 }
 
-.menu__button {
+.actions__button {
   padding: 14px 12px;
   background-color: #67b54b;
   border-radius: 5px;
@@ -223,19 +224,19 @@ p {
   justify-content: center;
   text-align: left;
   gap: 30px;
-  margin: 30px 0;
+  padding: 40px 0;
   background-color: #025157;
   padding: 45px 0;
 }
 
 .feature__card {
   display: flex;
-  background-color: #FFFBF7;
+  background-color: #ffffff;
   border-radius: 5px;
 }
 
 .card__content {
-  padding: 30px 20px 40px 40px;
+  padding: 30px 10px 40px 40px;
   width: 65%;
 }
 
@@ -264,7 +265,8 @@ p {
 }
 
 .card__icon-container {
-  max-width: 35px;}
+  max-width: 35px;
+}
 
 .card__icon {
   width: 100%;
@@ -273,3 +275,182 @@ p {
 .image {
   margin: auto;
 }
+
+.logros {
+  background-color: #a1d683;
+  padding: 54px 164px;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 42% 20%;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.logros__image {
+  max-width: 500px;
+}
+
+.logros__image-asset {
+  width: 100%;
+}
+
+.logros__title {
+  font-family: 'Alegreya', serif;
+  font-size: 51px;
+  line-height: 61px;
+  color: #025157;
+  margin-bottom: 15px;
+}
+
+.logros__text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  color: #343434;
+  margin-bottom: 15px;
+}
+
+.logros__button {
+  background-color: #025157;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  padding: 12px;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.logros__container {
+  width: 220px;
+  position: relative;
+}
+
+.logros__card {
+  background-color: #ffffff;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.logros__pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  gap: 10px;
+}
+
+.logros__pagination-button {
+  background-color: #ffffff;
+  height: 3px;
+  width: 30px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.logros__pagination-button:first-child {
+  opacity: 1;
+}
+
+.logros__image-container {
+  width: 220px;
+  height: 177px;
+  border-radius: 8px 8px 0 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.logros__image {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.logros__brand-container {
+  position: absolute;
+  top: 110px;
+  right: 25px;
+  background-color: #f9da73;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logros__brand {
+  height: auto;
+  width: 80%;
+}
+
+.achievement {
+  padding: 25px;
+}
+
+.achievement__brand {
+  font-family: "Slabo 27px", serif;
+  font-size: 18px;
+  line-height: 20px;
+  color: #025157;
+  margin-bottom: 12px;
+  margin-top: 15px;
+}
+
+.achievement__summary {
+  font-family: "Open Sans", sans-serif;
+  font-size: 25px;
+  line-height: 30px;
+  color: #212529;
+}
+
+.achievement__text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #8b8b8b;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+.achievement__container {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.achievement__button {
+  background-color: #025157;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  padding: 12px;
+  color: #ffffff;
+  margin-top: 30px;
+  width: 100%;
+}
+
+
+/** dispositivos móviles en vista viewport (vertical) */
+@media (max-width: 575px) {
+  .menu, .actions {
+    display: none;
+  }
+}
+
+/** dispositivos pequeños en vista landscape (horizontal) */
+@media (min-width: 576px and max-width: 767px) {}
+
+/** dispositivos medianos (tablets) */
+@media (min-width: 768px and max-width: 991px) {}
+
+/** dispositivos grandes (desktops) */
+@media (min-width: 992px and max-width: 1199px) {}
+
+/** dispositivos extra grandes (monitores grandes, tvs) */
+@media (min-width: 1200px) {}

@@ -116,6 +116,8 @@ p {
   line-height: 72px;
   color: #025157;
   margin: 24px;
+  font-style: bold;
+  font-weight: 600;
 }
 
 .hero__subtitle {
@@ -438,7 +440,90 @@ p {
 
 /** dispositivos móviles en vista viewport (vertical) */
 @media (max-width: 575px) {
-  .menu, .actions {
+
+  .menu,
+  .actions {
+    display: none;
+  }
+
+  .main {
+    margin-top: 130px;
+  }
+
+  .hero__title {
+    font-size: 30px;
+    line-height: 42px;
+  }
+
+  .form {
+    padding: 0 10px;
+  }
+
+  .form__input {
+    width: 60%;
+  }
+
+  .form__submit {
+    width: 40%;
+  }
+
+  .capterra {
+    width: 70%;
+  }
+
+  .matcha {
+    width: 90%;
+    height: auto;
+    display: block;
+    margin: 30px auto 0;
+  }
+
+  .promo {
+    flex-direction: column;
+    align-items: center;
+    margin:50px auto;
+  }
+
+  .promo__video {
+    width: 90%;
+    height: auto;
+  }
+
+  .promo__article{
+    width: 90%;
+    height: auto;
+  }
+
+  .article__title{
+    font-size: 25px;
+    line-height: 1.2;
+  }
+
+  .article__form {
+    width: 100%;
+    padding: 0;
+  }
+
+  .article__form > .form__input {
+    width: 50%;
+    padding-right: 10px;
+  }
+
+  .article__form > .form__submit {
+    width: 50%;
+  }
+
+  .features {
+    grid-template: repeat(4, 1fr) / 1fr;
+    padding: 45px 20px;
+  }
+
+  .card__content {
+      padding: 30px 40px 40px 40px; 
+    width: 100%;
+  }
+
+  .card__image {
     display: none;
   }
 }

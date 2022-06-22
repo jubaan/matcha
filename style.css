@@ -480,6 +480,12 @@ p {
     padding: 0 20px;
   }
 
+  .menu,
+  .actions {
+    align-items: center;
+    justify-content: center;
+  }
+
   .main {
     margin-top: 130px;
   }
@@ -602,7 +608,7 @@ p {
     width: 80%;
   }
 
-  .article__form > .form__submit {
+  .article__form>.form__submit {
     font-size: 14px;
   }
 }

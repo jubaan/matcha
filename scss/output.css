@@ -14,6 +14,8 @@
 }
 .blog .process-list .process {
   margin-bottom: 25px;
+  display: flex;
+  text-align: left;
 }
 .blog .process-list .process > div > h3 {
   color: #025157;
@@ -40,6 +42,8 @@
   padding: 12px;
   width: 180px;
   margin-bottom: 15px;
+  background-color: #025157;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=output.css.map */

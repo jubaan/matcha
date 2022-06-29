@@ -43,6 +43,7 @@ p {
   z-index: 1;
   max-width: 1440px;
   width: 100%;
+
 }
 
 .navbar {
@@ -114,7 +115,7 @@ p {
 .main {
   width: 100%;
   margin: 285px auto 0;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .hero__title {
@@ -125,6 +126,7 @@ p {
   margin: 24px;
   font-style: bold;
   font-weight: 600;
+  text-align: center;
 }
 
 .hero__subtitle {
@@ -133,6 +135,7 @@ p {
   line-height: 24px;
   color: #46484c;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .form {
@@ -170,10 +173,11 @@ p {
   line-height: 24px;
   color: #8b8b8b;
   opacity: 80%;
+  text-align: center;
 }
 
 .capterra {
-  width: 82px;
+  width: 350px;
   display: block;
   margin: 0 auto;
 }

@@ -452,6 +452,10 @@ p {
   width: 100%;
 }
 
+.form__submit:hover {
+  background-color: #67b54b;
+}
+
 
 /** dispositivos móviles en vista viewport (vertical) */
 @media (max-width: 575px) {
